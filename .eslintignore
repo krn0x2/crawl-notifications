@@ -1,0 +1,9 @@
+# folders
+/coverage/**
+/node_modules/**
+
+# exclude functional-test files
+*.ispec.js
+
+# exclude json files
+*.json
