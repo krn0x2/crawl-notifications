@@ -1,21 +1,14 @@
 {
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "no-loops/no-loops": 2,
-    "no-console": 2,
-    "linebreak-style": 0,
-    "indent": ["error", 4],
-    "global-require": ["off"],
-    "no-underscore-dangle": 0,
-    "no-inline-comments": ["error"],
-    "max-len": ["error", { "code": 160 }],
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "func-names": ["error", "never"]
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "@typescript-eslint/no-explicit-any": 0
   },
-  "env": {
-    "node": true,
-    "es6": true,
-    "jasmine": true
-  },
-  "plugins": ["eslint-plugin-require", "eslint-plugin-one-variable-per-var", "no-loops"],
-  "extends": "airbnb-base"
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ]
 }
